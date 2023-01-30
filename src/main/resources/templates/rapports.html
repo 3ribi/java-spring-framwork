@@ -1,0 +1,385 @@
+
+<!doctype html>
+<html lang="en" data-layout="horizontal" data-topbar="dark" data-sidebar-size="lg" data-sidebar="light" data-sidebar-image="none" data-preloader="disable"
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+
+<!-- Mirrored from themesbrand.com/velzon/html/saas/pages-starter.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 23 Jan 2023 19:05:36 GMT -->
+<head>
+
+    <meta charset="utf-8" />
+    <title>Rapports | Laracultura - Admin & Dashboard</title>
+    <link rel="shortcut icon" href="/assets/images/logo-sm.png">
+
+    <!-- Layout config Js -->
+    <script src="/assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="/assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="/assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+        <div th:replace="header :: section">...</div>
+
+
+        <!-- Left Sidebar End -->
+        <!-- Vertical Overlay-->
+        <div class="vertical-overlay"></div>
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0">Rapports</h4>
+
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
+                                        <li class="breadcrumb-item active">Rapports</li>
+                                    </ol>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="tab-content pt-4 text-muted">
+                                
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-4">
+                                                <h5 class="card-title flex-grow-1 mb-0">Documents</h5>
+                                                <div class="flex-shrink-0">
+                                                    <input class="form-control d-none" type="file" id="formFile">
+                                                    <label for="formFile" class="btn btn-danger"><i class="ri-upload-2-fill me-1 align-bottom"></i> Upload File</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-borderless align-middle mb-0">
+                                                            <thead class="table-light">
+                                                                <tr>
+                                                                    <th scope="col">File Name</th>
+                                                                    <th scope="col">Type</th>
+                                                                    <th scope="col">Size</th>
+                                                                    <th scope="col">Upload Date</th>
+                                                                    <th scope="col">Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <div class="avatar-sm">
+                                                                                <div class="avatar-title bg-soft-primary text-primary rounded fs-20">
+                                                                                    <i class="ri-file-zip-fill"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="ms-3 flex-grow-1">
+                                                                                <h6 class="fs-14 mb-0"><a href="javascript:void(0)" class="text-body">Artboard-documents.zip</a>
+                                                                                </h6>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>Zip File</td>
+                                                                    <td>4.57 MB</td>
+                                                                    <td>12 Dec 2021</td>
+                                                                    <td>
+                                                                        <div class="dropdown">
+                                                                            <a href="javascript:void(0);" class="btn btn-light btn-icon" id="dropdownMenuLink15" data-bs-toggle="dropdown" aria-expanded="true">
+                                                                                <i class="ri-equalizer-fill"></i>
+                                                                            </a>
+                                                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink15">
+                                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill me-2 align-middle text-muted"></i>View</a>
+                                                                                </li>
+                                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-download-2-fill me-2 align-middle text-muted"></i>Download</a>
+                                                                                </li>
+                                                                                <li class="dropdown-divider"></li>
+                                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-line me-2 align-middle text-muted"></i>Delete</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <div class="avatar-sm">
+                                                                                <div class="avatar-title bg-soft-danger text-danger rounded fs-20">
+                                                                                    <i class="ri-file-pdf-fill"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="ms-3 flex-grow-1">
+                                                                                <h6 class="fs-14 mb-0"><a href="javascript:void(0);" class="text-body">Bank
+                                                                                        Management System</a></h6>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>PDF File</td>
+                                                                    <td>8.89 MB</td>
+                                                                    <td>24 Nov 2021</td>
+                                                                    <td>
+                                                                        <div class="dropdown">
+                                                                            <a href="javascript:void(0);" class="btn btn-light btn-icon" id="dropdownMenuLink3" data-bs-toggle="dropdown" aria-expanded="true">
+                                                                                <i class="ri-equalizer-fill"></i>
+                                                                            </a>
+                                                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink3">
+                                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill me-2 align-middle text-muted"></i>View</a>
+                                                                                </li>
+                                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-download-2-fill me-2 align-middle text-muted"></i>Download</a>
+                                                                                </li>
+                                                                                <li class="dropdown-divider"></li>
+                                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-line me-2 align-middle text-muted"></i>Delete</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <div class="avatar-sm">
+                                                                                <div class="avatar-title bg-soft-secondary text-secondary rounded fs-20">
+                                                                                    <i class="ri-video-line"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="ms-3 flex-grow-1">
+                                                                                <h6 class="fs-14 mb-0"><a href="javascript:void(0);" class="text-body">Tour-video.mp4</a>
+                                                                                </h6>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>MP4 File</td>
+                                                                    <td>14.62 MB</td>
+                                                                    <td>19 Nov 2021</td>
+                                                                    <td>
+                                                                        <div class="dropdown">
+                                                                            <a href="javascript:void(0);" class="btn btn-light btn-icon" id="dropdownMenuLink4" data-bs-toggle="dropdown" aria-expanded="true">
+                                                                                <i class="ri-equalizer-fill"></i>
+                                                                            </a>
+                                                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink4">
+                                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill me-2 align-middle text-muted"></i>View</a>
+                                                                                </li>
+                                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-download-2-fill me-2 align-middle text-muted"></i>Download</a>
+                                                                                </li>
+                                                                                <li class="dropdown-divider"></li>
+                                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-line me-2 align-middle text-muted"></i>Delete</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <div class="avatar-sm">
+                                                                                <div class="avatar-title bg-soft-success text-success rounded fs-20">
+                                                                                    <i class="ri-file-excel-fill"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="ms-3 flex-grow-1">
+                                                                                <h6 class="fs-14 mb-0"><a href="javascript:void(0);" class="text-body">Account-statement.xsl</a>
+                                                                                </h6>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>XSL File</td>
+                                                                    <td>2.38 KB</td>
+                                                                    <td>14 Nov 2021</td>
+                                                                    <td>
+                                                                        <div class="dropdown">
+                                                                            <a href="javascript:void(0);" class="btn btn-light btn-icon" id="dropdownMenuLink5" data-bs-toggle="dropdown" aria-expanded="true">
+                                                                                <i class="ri-equalizer-fill"></i>
+                                                                            </a>
+                                                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink5">
+                                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill me-2 align-middle text-muted"></i>View</a>
+                                                                                </li>
+                                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-download-2-fill me-2 align-middle text-muted"></i>Download</a>
+                                                                                </li>
+                                                                                <li class="dropdown-divider"></li>
+                                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-line me-2 align-middle text-muted"></i>Delete</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <div class="avatar-sm">
+                                                                                <div class="avatar-title bg-soft-info text-info rounded fs-20">
+                                                                                    <i class="ri-folder-line"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="ms-3 flex-grow-1">
+                                                                                <h6 class="fs-14 mb-0"><a href="javascript:void(0);" class="text-body">Project
+                                                                                        Screenshots Collection</a>
+                                                                                </h6>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>Floder File</td>
+                                                                    <td>87.24 MB</td>
+                                                                    <td>08 Nov 2021</td>
+                                                                    <td>
+                                                                        <div class="dropdown">
+                                                                            <a href="javascript:void(0);" class="btn btn-light btn-icon" id="dropdownMenuLink6" data-bs-toggle="dropdown" aria-expanded="true">
+                                                                                <i class="ri-equalizer-fill"></i>
+                                                                            </a>
+                                                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink6">
+                                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill me-2 align-middle"></i>View</a>
+                                                                                </li>
+                                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-download-2-fill me-2 align-middle"></i>Download</a>
+                                                                                </li>
+                                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-line me-2 align-middle"></i>Delete</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <div class="avatar-sm">
+                                                                                <div class="avatar-title bg-soft-danger text-danger rounded fs-20">
+                                                                                    <i class="ri-image-2-fill"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="ms-3 flex-grow-1">
+                                                                                <h6 class="fs-14 mb-0"><a href="javascript:void(0);" class="text-body">Velzon-logo.png</a>
+                                                                                </h6>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>PNG File</td>
+                                                                    <td>879 KB</td>
+                                                                    <td>02 Nov 2021</td>
+                                                                    <td>
+                                                                        <div class="dropdown">
+                                                                            <a href="javascript:void(0);" class="btn btn-light btn-icon" id="dropdownMenuLink7" data-bs-toggle="dropdown" aria-expanded="true">
+                                                                                <i class="ri-equalizer-fill"></i>
+                                                                            </a>
+                                                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink7">
+                                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill me-2 align-middle"></i>View</a>
+                                                                                </li>
+                                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-download-2-fill me-2 align-middle"></i>Download</a>
+                                                                                </li>
+                                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-line me-2 align-middle"></i>Delete</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="text-center mt-3">
+                                                        <a href="javascript:void(0);" class="text-success "><i class="mdi mdi-loading mdi-spin fs-20 align-middle me-2"></i>
+                                                            Load more </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+<!--end tab-pane-->
+                            </div>
+<!--end tab-content-->
+                         </div>
+                    </div>
+<!--end col-->
+                </div>
+<!--end row-->
+
+            </div><!-- container-fluid -->
+        </div><!-- End Page-content -->
+
+
+
+
+
+
+
+                    
+
+    </div>
+<!-- container-fluid -->
+</div>
+<!-- End Page-content -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div th:replace="footer :: section">...</div>
+
+
+
+<!-- JAVASCRIPT -->
+<script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/libs/simplebar/simplebar.min.js"></script>
+<script src="/assets/libs/node-waves/waves.min.js"></script>
+<script src="/assets/libs/feather-icons/feather.min.js"></script>
+<script src="/assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+<script src="/assets/js/plugins.js"></script>
+
+<!-- App js -->
+<script src="/assets/js/app.js"></script>
+</body>
+
+
+<!-- Mirrored from themesbrand.com/velzon/html/saas/pages-starter.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 23 Jan 2023 19:05:36 GMT -->
+</html>

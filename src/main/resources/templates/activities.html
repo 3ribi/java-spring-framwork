@@ -1,0 +1,128 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="utf-8" />
+    <title>Activities | Laracultura </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+
+
+
+    <link rel="shortcut icon" href="/assets/images/logo-sm.png">
+
+<!--Swiper slider css-->
+    <link href="/assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Layout config Js -->
+    <script src="/assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="/assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="/assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <div class="layout-wrapper">
+        <div th:replace="header :: nav">...</div>
+        <section class="section pb-0 hero-section" id="hero">
+            
+
+            <div class="page-content">
+                <div class="container">
+                    <div class="justify-content-between d-flex align-items-center mt-3 mb-4">
+                        <h5 class="mb-0 text-decoration-underline">Our Activities</h5>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            
+                            <div class="row">
+                                
+                                
+                                <div class="col-xxl-6" th:each="act: ${articles}">
+                                    <!-- <div class="card">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img class="rounded-start img-fluid h-100 object-cover" th:src="'activity/image/' + *{act.title}" alt="Card image">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-header">
+                                                    <h5 class="card-title mb-0" th:text="${act.title}"></h5>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-text mb-2" th:text="${act.descriptionEng}"></p>
+                                                    
+                                                </div>
+                                                <div class="card-footer bg-transparent text-center">
+                                                    <a th:href="'activity/'+${act.title}" class="link-dark">Read More <i class="ri-arrow-right-s-line align-middle ms-1 lh-1"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>-->
+                                    <div class="card">
+                                        <div class="card-body" >
+                                            <div class="row g-0 bg-light position-relative" >
+                                                <div class="col-md-5">
+                                                    <img th:src="'activity/image/' + *{act.title}" alt="project Image" class="rounded-start img-fluid h-100 object-cover" />
+                                                </div>
+                                                <div class="col-md-7 p-4">
+                                                    <h5 class="mt-0" th:text="${act.title}">Columns with stretched link</h5>
+                                                    <p th:text="${act.descriptionEng}">Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                                                    <a th:href="'activity/'+${act.title}" class="stretched-link">Read More <i class="ri-arrow-right-s-line align-middle ms-1 lh-1"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- end col -->
+                               
+                                
+                                
+                            </div><!-- end row -->
+
+                            
+                </div>
+            </div>
+        </div></div></section>
+        <div th:replace="footer :: nav">...</div>
+    <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+</div>
+    
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+    <script src="assets/js/plugins.js"></script>
+
+    <!-- prismjs plugin -->
+  
+
+
+ <!-- landing init -->
+ <script src="/assets/js/pages/landing.init.js"></script>
+
+    <!-- App js -->
+
+
+
+</body>
+</html>

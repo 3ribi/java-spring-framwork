@@ -1,0 +1,62 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+      <head>
+        <title>Lara Cultura Community</title>
+      
+        <meta charset="utf-8" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="shortcut icon" href="/assets/images/logo-sm.png">
+
+    <!--Swiper slider css-->
+    <link href="/assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Layout config Js -->
+    <script src="/assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="/assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="/assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+      </head>
+      <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+        <div class="layout-wrapper landing">
+
+
+                            <!-- normal -->
+            <div th:replace="header :: nav">...</div>
+            <div th:replace="footer :: nav">...</div>
+
+
+
+
+
+
+
+                    <!-- dashboard -->
+            <div th:replace="header :: section">...</div>
+            <div th:replace="footer :: section">...</div>
+            
+        </div>
+
+        <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="/assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="/assets/libs/node-waves/waves.min.js"></script>
+        <script src="/assets/libs/feather-icons/feather.min.js"></script>
+        <script src="/assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+        <script src="/assets/js/plugins.js"></script>
+
+        <!--Swiper slider js-->
+        <script src="/assets/libs/swiper/swiper-bundle.min.js"></script>
+
+        <!-- landing init -->
+        <script src="/assets/js/pages/landing.init.js"></script>
+
+        <script src="/assets/js/pages/job-lading.init.js"></script>
+
+
+    </body>
+</html>
